@@ -11,6 +11,7 @@ const employee = {
     ,
 };
 
+// Define function for update the object non-destructively 
 function updateEmployeeWithKeyAndValue(employee,key, value){
     // Create a copy of the original object
     const newEmployee = {...employee};
@@ -18,5 +19,9 @@ function updateEmployeeWithKeyAndValue(employee,key, value){
     return newEmployee;
 }
 
-
+// Define function for update the object destructively 
+function destructivelyUpdateEmployeeWithKeyAndValue(employee,key, value){
+    employee[key] = value;
+    return employee;
+}
 
