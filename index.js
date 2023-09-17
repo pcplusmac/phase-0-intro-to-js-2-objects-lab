@@ -25,3 +25,16 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee,key, value){
     return employee;
 }
 
+// Define function for removing property of object non-destructively
+function deleteFromEmployeeByKey(employee,key){
+    const newEmployee = {...employee};
+    delete newEmployee[key]; 
+    return newEmployee;
+}
+
+// Define funciton for removing the property in the original object
+function destructivelyDeleteFromEmployeeByKey(employee,key){
+    
+    delete employee[key]; 
+    return employee;
+}
