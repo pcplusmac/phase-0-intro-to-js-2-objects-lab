@@ -1,5 +1,5 @@
 // Write your solution in this file!
-// Define an array for all employees
+// Create an object for all employees using literal syntax
 const employee = {
     name: "Alex",
     streetAddress: { 
